@@ -1,0 +1,144 @@
+body ::selection {
+
+    color:#FFFFFF;
+
+    background-color:#D3AE79;
+
+    text-shadow:none;
+
+}
+.tv_hot {
+	width: 350px;
+}
+
+.avatar {
+	position: relative;
+}
+
+.tv_hot .avatar {
+	display: block;
+	height: 220px;
+	overflow: hidden;
+	width: 350px;
+}
+
+.tv_hot .avatar img {
+	height: 220px;
+}
+
+.avatar:after {
+	bottom: 0;
+	content: url("https://www.qijishow.com/book/images/bg_play.png");
+	left: 5px;
+	position: absolute;
+	z-index: 10;
+}
+
+.avatar:hover, .zhuti .avatar:hover, .bbsinner .avatar:hover {
+	box-shadow: 0 0 10px gray;
+}
+
+.avatar:hover img, .zhuti .avatar:hover img, .bbsinner .avatar:hover img {
+	transform: scale(1.3);
+	transition: all 1s ease 0s;
+	-webkit-transform: scale(1.3);
+	-webkit-transform: all 1s ease 0s;
+}
+
+#pagewrap {
+	top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #EFEFEF;
+	width: 1349px;
+}
+
+#header {
+	margin: auto;
+	position: fixed;
+	z-index: 1000;
+	background: transparent url(../img/tot.png) repeat top left;
+	height: 80px;
+	width: 1349px;
+	border: 1px solid #E5E5E5;
+}
+
+#header-container {
+	margin: auto;
+	margin-top: -21px;
+	width: 100%;
+}
+
+#header-left {
+	padding-top: 0;
+	width: 92%;
+	margin: auto 62px auto auto;
+}
+
+#logo {
+	position: static;
+	transform: rotate(0deg);
+	width: 267px;
+	margin-top: 11px;
+	background: url(../img/bg.png) no-repeat 14px 19px;
+	height: 93px;
+}
+
+#logo a {
+	text-indent: -9999px;
+	display: block;
+	height: 80px;
+	outline: none;
+}
+
+#logo:hover {
+	background-position: 16px -80px;
+}
+
+#header-icons {
+	float: right;
+	position: relative;
+	margin: -97px 67px 0 0;
+}
+
+#header-icons ul li {
+	float: left;
+	margin: 0px 16px 0 0;
+}
+
+#header-icons ul li a {
+	text-indent: -9999px;
+	position: static;
+	-webkit-transform: rotate(0deg);
+	left: -1px;
+	top: -2px;
+	display: block;
+	width: 35px;
+	height: 35px;
+	margin-top: 140px;
+	transform: rotate(0deg);
+}
+
+#pc a:hover {
+	background: url(../img/bg.png) -1px -265px no-repeat;
+}
+
+#pc a {
+	background: url(../img/bg.png) 0px -230px no-repeat;
+}
+
+#pa a:hover {
+	background: url(../img/bg.png) -35px -265px no-repeat;
+}
+
+#pa a {
+	background: url(../img/bg.png) -35px -231px no-repeat;
+}
+
+#pb a:hover {
+	background: url(../img/bg.png) -141px -264px no-repeat;
+}
+
+#pb a {
+	background: url(../img/bg.png) -140px -229px no-repeat;
+}

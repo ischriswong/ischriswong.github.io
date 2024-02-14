@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<!-- saved from url=(0107)http://www.qijishow.com -->
+<html class="hb-loaded"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>奇迹秀-学习iOS设计----iOS8的颜色、文字和布局学</title>
+<meta name="keywords" content="奇迹秀,ui设计,界面设计,ui平台,学ui,ui教程,ui源文件,ui下载,ui问答,ui杂志,ui活动,ui软件,ui工具,ui灵感,ui经验">
+<meta name="description" content="奇迹秀是专业的界面设计师交流、学习/展示平台.同时也是UI设计师人才流动的集散地,为UI设计师做最好的服务,提高UI设计行业价值!这里拥有最无敌的创意、
+最精美的视觉、最具国际化的意识和前瞻性思维！也许在不知不觉中，它将成为你设计路上的一位好伙伴">
+<link rel="stylesheet" type="text/css" href="img/style.css">
+<script type="text/javascript">
+    var sampling = Math.random() < 0.001;
+    var page_begintime = (+new Date());
+    (sampling) && ((new Image()).src = "http://isdspeed.qq.com/cgi-bin/r.cgi?flag1=7839&flag2=7&flag3=8&15=1000&r=" + Math.random());
+</script>       
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
+<link rel="shortcut icon" href="../img/ico.ico" type="images/x-icon" />
+<link rel="stylesheet" type="text/css" href="css/global_ny3.css">
+<link rel="stylesheet" type="text/css" href="css/media_timess.css">
+<link rel="stylesheet" type="text/css" href="https://www.qijishow.com/book/css/simditor.css">
+<script src="css/jquery.min.js"></script>
+<script src="css/common.js" type="text/javascript"></script>
+<script type="text/javascript">
+// Mobile Safari in standalone mode
+if (("standalone" in window.navigator) && window.navigator.standalone) {
+        // If you want to prevent remote links in standalone web apps opening Mobile Safari, change 'remotes' to true
+    var noddy,
+        remotes = false;
+    document.addEventListener('click', function(event) {
+        noddy = event.target;
+        //Bubble up until we hit link or top HTML element. Warning: BODY element is not compulsory so better to stop on HTML
+        while (noddy.nodeName !== "A" && noddy.nodeName !== "HTML") {
+            noddy = noddy.parentNode;
+        }
+        if ('href' in noddy && noddy.href.indexOf('http') !== -1 && (noddy.href.indexOf(document.location.host) !== -1 || remotes)) {
+            event.preventDefault();
+            document.location.href = noddy.href;
+        }
+    }, false);
+}
+</script>
+<script type="text/javascript" charset="utf-8" src="css/page_context.js"></script>
+<script type="text/javascript">
+    var uin = "";
+    var key = "";
+    var pass_ticket = "";
+</script>
+
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="./img/style2.css"/>
+<![endif]-->
+<style>
+        </style>
+<script type="text/javascript">
+    document.domain = "qq.com";
+</script>
+
+    
+
+
+<!-- qijishow.com Baidu tongji analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+var hm = document.createElement("script");
+hm.src = "https://hm.baidu.com/hm.js?72901b05b1c13f850ab179d6326c1f75";
+var s = document.getElementsByTagName("script")[0];
+s.parentNode.insertBefore(hm, s);
+})();
+</script>
+
+
+
+</head>
+    <body id="activity-detail" class="zh_CN " huaban_collector_injected="true">
+    <script type="text/javascript">
+        var write_sceen_time = (+new Date());
+        (sampling) && ((new Image()).src = "http://isdspeed.qq.com/cgi-bin/r.cgi?flag1=7839&flag2=7&flag3=8&16=1000&r=" + Math.random());
+    </script>
+    <!--[if !IE]><!-->
+        <div class="top">
+            <div id="dd" class="wrapper-dropdown-5" tabindex="1" >
+                <img src="img/nav_icon.png" width="44" height="44">
+                <div  class="dropdown">
+                <div class="index_nav3">
+				 <div class="index_nav_icon"><a href="../index.html">奇迹秀</a></div>
+				  <div class="index_nav_icon"><a href="../Brand/Brand30/index.htm">关于我</a></div>
+				 <div class="index_nav_icon"><a href="../Brand/Brand29/index.htm">摄影展</a></div>
+                    <div class="index_nav_icon"><a href="../Brand/Brand31/index.htm">记录线</a></div>
+					 <div class="index_nav_icon"><a href="../photo.htm">图片库</a></div>
+                    <div class="index_nav_icon"><a href="http://www.qijishow.com/down/index.htm">工具箱</a></div>
+                  
+                </div>
+                </div>
+            </div>
+            <div class="logo" >
+                <a href="#"><img src="img/logo.png" width="44" height="44"></a>
+            </div>
+        </div>
+		
+		<!--<![endif]-->
+        <div id="pagewrap">
+            <div id="page">
+                <div id="header">
+                    <div id="pr">
+                        <!--导航-->
+                        <div id="header">
+                            <div id="header-container">
+                                <div id="header-left">
+                                    <h1 id="logo" style="width: 264px; position: static; -webkit-transform: rotate(0deg); left: -1px; top: -1px;">
+                                        <a href="../index.html" title="奇迹秀"></a>
+                                    </h1>
+                                    <div id="header-right">
+                                        <div id="header-icons">
+                                            <ul>
+                                                <li id="pc">
+                                                    <a class="icon-ips" target="_blank" title="腾讯微博" href="http://t.qq.com/FS-HOW" style="position: static; -webkit-transform: rotate(0deg); left: -1px; top: -2px;">腾讯微博</a>
+                                                </li>
+                                                <li id="pc">
+                                                    <a class="icon-ipc" target="_blank" title="新浪微博" href="http://weibo.com/quanquanxiaonan" style="position: static; -webkit-transform: rotate(0deg);">腾讯微博</a>
+                                                </li>
+                                                <li id="pc">
+                                                    <a class="icon-zhaofile" target="_blank" title="QQ空间" href="http://user.qzone.qq.com/791475624">QQ空间</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="design"></div>
+                            </div><!--内容-->
+                        </div>
+                    </div>
+                </div>
+				
+	
+     <div id="js_article" class="rich_media ">
+                  <h2 class="rich_media_title" id="activity-name">
+学习iOS设计----iOS8的颜色、文字和布局学
+
+            </h2>
+        <div id="js_top_ad_area" class="top_banner"></div><div class="rich_media_inner"><div class="rich_media_meta_list"></div>
+<div id="page-content">
+<div id="img-content">
+ <div class="rich_media_content" id="js_content">
+
+ <p style="text-align: center;"><img src="http://qjshow.qiniudn.com/14197711923508.jpg" title="学习iOS设计----iOS8的颜色、文字和布局学" data_ue_src="http://qjshow.qiniudn.com/14197711923508.jpg" width="760" height="260" border="0" hspace="0" vspace="0" style="width: 760px; height: 260px;"/></p><p><br/></p><p>　　在去年，Apple针对新时代用户彻底更新了其设计语言。现在的设计语言相对之前大为简化，能够让设计师将精力集中到动画和功能上，而不是繁复的视觉细节上。</p><p><br/></p><p>　　<strong>很多人都曾问过我：设计应当如何入门？成为一名优秀设计师有没有捷径可走？要我说，虽然没有捷径，但确实有几个适用于iOS的设计技巧和规则能够从全局角度改变你的设计方式。</strong></p><p><br/></p><p>　　当然，即便你目前的设计目标是完全不同于iOS的平台，相互之间的设计理念也是相通的，你可以将在web和印刷领域学习到的技巧运用到iOS设计中去。iOS 8是一个让设计寻回根源的平台，它给人一种类似现代杂志的感觉，文字精美、布局简单。本书中所介绍的内容将在你未来设计优秀产品的旅程中给你带来巨大的裨益。</p><p><br/></p><p style="text-align: center;"><img src="http://qjshow.qiniudn.com/14197712913095.jpg" title="学习iOS设计----iOS8的颜色、文字和布局学" data_ue_src="http://qjshow.qiniudn.com/14197712913095.jpg" width="760" height="507" border="0" hspace="0" vspace="0" style="width: 760px; height: 507px;"/></p><p><br/></p><p>　　<strong><span style="font-size: 24px;">iOS 8人机界面指南</span></strong></p><p><br/></p><p>　　在开始设计之前，我们需要先了解一下都有哪些资源可为我们所用。幸运的是，这方面资源还是很多的。</p><p><br/></p><p style="text-align: center;"><img src="http://qjshow.qiniudn.com/14197713292126.jpg" title="学习iOS设计----iOS8的颜色、文字和布局学" data_ue_src="http://qjshow.qiniudn.com/14197713292126.jpg" width="760" height="641" border="0" hspace="0" vspace="0" style="width: 760px; height: 641px;"/></p><p><br/></p><p>　　如果你还没读过iOS 8人机界面指南，我强烈建议你快速浏览一遍，让自己从整体上了解一下新版本进行了哪些改变和改进。</p><p><br/></p><p>　　<strong><span style="font-size: 24px;">核心理念</span></strong></p><p><br/></p><p>　　iOS 8包含3大核心理念：遵从、明晰与深度。</p><p><br/></p><p>　　下面我将这几项设计原则的含义细化成能够实际操作的内容进行解释，当然，我解释的深度将远甚于Apple指南。</p><p><br/></p><p>　　<strong><span style="font-size: 24px;">顺从</span></strong></p><p><br/></p><p>　　以内容为主角，其他都是配角。所使用的元素应当作为内容的补充，不要使用会分散人注意力的视觉元素与内容争抢目光。</p><p><br/></p><p>　　<strong><span style="font-size: 24px;">简化</span></strong></p><p><br/></p><p>　　将用户界面简化到只保留最核心的美感。每次在你要添加新元素时都应自问：是否必要？如果你的应用不属于游戏或者没有特定的主题，那么请慎重使用大量的材质、3D效果和多重阴影，将关键放到功能性颜色、协调渐变和美观的文字上。</p><p><br/></p><p style="text-align: center;"><img src="http://qjshow.qiniudn.com/14197713757818.jpg" title="学习iOS设计----iOS8的颜色、文字和布局学" data_ue_src="http://qjshow.qiniudn.com/14197713757818.jpg" width="760" height="570" border="0" hspace="0" vspace="0" style="width: 760px; height: 570px;"/></p><p><br/></p><p>　　<strong><span style="font-size: 24px;">内容最大化</span></strong></p><p><br/></p><p>　　内容应占满整个屏幕，给内中的元素留出最大的空间。不要使用多重容器，将滚动区域最大化以便给交互留出更多空间。</p><p><br/></p><p style="text-align: center;"><img src="http://qjshow.qiniudn.com/14197714101390.jpg" title="学习iOS设计----iOS8的颜色、文字和布局学" data_ue_src="http://qjshow.qiniudn.com/14197714101390.jpg" width="760" height="570" border="0" hspace="0" vspace="0" style="width: 760px; height: 570px;"/></p><p><br/></p><p>　　<strong><span style="font-size: 24px;">颜色</span></strong></p><p><br/></p><p>　　使用显眼的颜色表现能够点击或需要突出的元素。颜色和中性色调选择的正确与否将决定你设计的成败。这是iOS 8设计中将要深层次讲解的一个方面。</p><p><br/></p><p style="text-align: center;"><img src="http://qjshow.qiniudn.com/14197714466314.jpg" title="学习iOS设计----iOS8的颜色、文字和布局学" data_ue_src="http://qjshow.qiniudn.com/14197714466314.jpg" width="760" height="571" border="0" hspace="0" vspace="0" style="width: 760px; height: 571px;"/></p><p><br/></p><p>　　<strong><span style="font-size: 24px;">文字既是内容</span></strong></p><p><br/></p><p>　　为了简化用户界面以及突出内容，文字将占到整个屏幕的50%到90%。考虑到这一点，你应当选用漂亮的字体，通过设定适当的粗细、线宽和颜色使其达到视觉美观、适合阅读的状态。这一方面将在文字部分进行更深入的介绍。</p><p><br/></p><p style="text-align: center;"><img src="http://qjshow.qiniudn.com/14197714923936.jpg" title="学习iOS设计----iOS8的颜色、文字和布局学" data_ue_src="http://qjshow.qiniudn.com/14197714923936.jpg" width="760" height="569" border="0" hspace="0" vspace="0" style="width: 760px; height: 569px;"/></p><p><br/></p><p>　　<strong><span style="font-size: 24px;">负空间</span></strong></p><p><br/></p><p>　　使用负空间凸显内容。你所能看到的东西越少，就越能将注意力全部集中到仅有的物体上。负空间能够留出呼吸的余地。不用在屏幕中堆砌太多的结构和无用的视觉元素。</p><p><br/></p><p style="text-align: center;"><img src="http://qjshow.qiniudn.com/14197715273870.jpg" title="学习iOS设计----iOS8的颜色、文字和布局学" data_ue_src="http://qjshow.qiniudn.com/14197715273870.jpg" width="320" height="274" border="0" hspace="0" vspace="0" style="width: 320px; height: 274px;"/></p><p><br/></p><p>　　<strong><span style="font-size: 24px;">图标状态</span></strong></p><p><br/></p><p>　　用于导航的图标有两种状态：轮廓及填充。使用轮廓的好处是不分散注意力。如果对图标进行填充，就会转移人的注意力。另外其还可能表示当前页面为活动页面。</p><p><br/></p><p style="text-align: center;"><img src="http://qjshow.qiniudn.com/14197715505617.jpg" title="学习iOS设计----iOS8的颜色、文字和布局学" data_ue_src="http://qjshow.qiniudn.com/14197715505617.jpg" width="244" height="112" border="0" hspace="0" vspace="0" style="width: 244px; height: 112px;"/></p><p><br/></p><p>　　<strong><span style="font-size: 24px;">明晰</span></strong></p><p><br/></p><p>　　让一切显然易懂。按钮应当表现出自己的功能，文字应该方便阅读并留出舒适的间距。你的内容应当明确表现出应用的功效。例如，如果是有关咖啡的应用，则应当能让人联想到咖啡豆、浓缩咖啡和咖啡的棕褐色。</p><p><br/></p><p>　　<strong><span style="font-size: 24px;">文字要方便阅读</span></strong></p><p><br/></p><p>　　在视网膜屏幕上，文字的大小不能小于22px。最佳阅读尺寸为32px。</p><p><br/></p><p style="text-align: center;"><img src="http://qjshow.qiniudn.com/14197715941175.jpg" title="学习iOS设计----iOS8的颜色、文字和布局学" data_ue_src="http://qjshow.qiniudn.com/14197715941175.jpg" width="744" height="648" border="0" hspace="0" vspace="0" style="width: 744px; height: 648px;"/></p><p><br/></p><p>　　<strong><span style="font-size: 24px;">使用作用明确的图标</span></strong></p><p><br/></p><p>　　图标不能含混不清，应当明确表现出自身的作用。在可能的情况下，尽量使用文字辅助。如果你使用了图标，那就一定不能在其他地方使用与当前图标类似的其他图标，否则会让用户看不懂。同样，不要使用“后退”或者“提交”这种太泛泛的文字，而应尽可能明确，例如“返回首页”或者“注册新账号”等。更多细节请阅读图标部分。</p><p><br/></p><p style="text-align: center;"><img src="http://qjshow.qiniudn.com/14197716475597.jpg" title="学习iOS设计----iOS8的颜色、文字和布局学" data_ue_src="http://qjshow.qiniudn.com/14197716475597.jpg" width="760" height="613" border="0" hspace="0" vspace="0" style="width: 760px; height: 613px;"/></p><p><br/></p><p>　　<strong><span style="font-size: 24px;">描述性画面</span></strong></p><p><br/></p><p>　　每个页面都应说明自己的用途。尽量减少使用品牌内容，代以明确的画面标题，如果采用了标签栏，则还应使用高亮的当前标签状态。</p><p><br/></p><p style="text-align: center;"><img src="http://qjshow.qiniudn.com/14197717407615.jpg" title="学习iOS设计----iOS8的颜色、文字和布局学" data_ue_src="http://qjshow.qiniudn.com/14197717407615.jpg" width="758" height="620" border="0" hspace="0" vspace="0" style="width: 758px; height: 620px;"/></p><p><br/></p><p>　　<strong><span style="font-size: 24px;">颜色的含义</span></strong></p><p><br/></p><p>　　颜色是有含义的。你可以使用红色、绿色、蓝色和中性色调分别表现破坏性操作、确认操作、链接和非活动状态。如果将这些颜色用做其他用途则会误导用户。例如，删除按钮上一定不要使用绿色。</p><p><br/></p><p style="text-align: center;"><img src="http://qjshow.qiniudn.com/14197717768898.jpg" title="学习iOS设计----iOS8的颜色、文字和布局学" data_ue_src="http://qjshow.qiniudn.com/14197717768898.jpg" width="691" height="619" border="0" hspace="0" vspace="0" style="width: 691px; height: 619px;"/></p><p><br/></p><p>　　<strong><span style="font-size: 24px;">深度</span></strong></p><p><br/></p><p>　　深度可能是最难理解的一个部分了。这是个非常抽象，同时又很有力而独特的概念。深度是指所有内容都应当具有关联和过渡关系。在真实生活中，当你从一个房间进到另一个房间中时，你会产生过渡和距离感，这样你才不会迷路。这个理念同样适用于用户界面。</p><p><br/></p><p>　　“对人和人所存在的现实的冷漠，是设计的唯一大忌。”-Dieter Rams</p><p><br/></p><p>　　<strong><span style="font-size: 24px;">过渡界面</span></strong></p><p><span style="font-size: 24px;"><span style="font-size: 16px;">　　从个人角度来讲，我认为这是iOS 8最有意思也最独一无二的一方面。每个屏幕之间的过渡、桌面缩放成文件夹然后缩放到应用。从传统角度来说，这种技巧很难操作，但Xcode 5让这一切变得容易实现。有关这部分技巧将在动画部分进行详解。</span></span><br/></p><p><span style="font-size: 24px;"><span style="font-size: 16px;"><br/></span></span></p><p style="text-align: center; "><video poster="http://qjshow.qiniudn.com/transitional.png" autoplay="autoplay" width="240" height="426" loop="true"><source src="http://qjshow.qiniudn.com/transitional.mp4" type="video/mp4"/><source src="https://designcode.io/images/webm/transitional.webm" type="video/webm"/>您的浏览器不支持video标签，请用chrome、safari、firefox浏览器浏览</video></p><p><br/></p><p><br/></p><p>　　<strong><span style="font-size: 24px;">模糊背景</span></strong></p><p><br/></p><p>　　背景不能影响到内容的清晰度。将背景模糊化不仅能让你保证其颜色的自然，同时能够突出前景。模糊并不是无中生有的效果，它在现实生活中也真实存在，比如你定睛看某个物体时，其他物体就会变模糊。</p><p><br/></p><p style="text-align: center; "><video poster="http://qjshow.qiniudn.com/blur.png" autoplay="autoplay" width="240" height="426" loop="true"><source src="http://qjshow.qiniudn.com/blur.mp4" type="video/mp4"/><source src="https://designcode.io/images/webm/blur.webm" type="video/webm"/>您的浏览器不支持video标签，请用chrome、safari、firefox浏览器浏览</video></p><p><br/></p><p style="text-align: center;"><img src="http://qjshow.qiniudn.com/14197720187255.jpg" title="学习iOS设计----iOS8的颜色、文字和布局学" data_ue_src="http://qjshow.qiniudn.com/14197720187255.jpg" width="700" height="467" border="0" hspace="0" vspace="0" style="width: 700px; height: 467px;"/></p><p><br/></p><p>　　<strong><span style="font-size: 24px;">一切为了讨喜</span></strong></p><p><br/></p><p>　　在指南中有3项能够让应用出彩的内容没有被提到：动画、手势和音效。这3项内容很容易用过火，所以要谨慎。</p><p><br/></p><p>　　<strong><span style="font-size: 24px;">动画</span></strong></p><p><br/></p><p>　　动画不仅能作为画面之间的过渡，还能给你的设计增添趣味性。另外还能让容易被忽略的元素受到关注。</p><p><br/></p><p style="text-align: center; "><video poster="http://qjshow.qiniudn.com/animations.png" autoplay="autoplay" width="240" height="426" loop="true"><source src="http://qjshow.qiniudn.com/animations.mp4" type="video/mp4"/><source src="https://designcode.io/images/webm/animations.webm" type="video/webm"/>您的浏览器不支持video标签，请用chrome、safari、firefox浏览器浏览</video></p><p><br/></p><p>　　<strong><span style="font-size: 24px;">手势</span></strong></p><p><br/></p><p style="text-align: center; "><video poster="http://qjshow.qiniudn.com/uikit.png" autoplay="autoplay" width="240" height="426" loop="true"><source src="http://qjshow.qiniudn.com/uikit.mp4" type="video/mp4"/><source src="https://designcode.io/images/webm/uikit.webm" type="video/webm"/>您的浏览器不支持video标签，请用chrome、safari、firefox浏览器浏览</video></p><p><br/></p><p>　　自iPhone 5开始采用长屏幕以来，后退按钮按起来就不那么方便了。所以说，手势虽然比不上眼睛看得见的视觉按钮，但也可以作为视觉交互的一个延伸。其对于水平比较高的用户来说非常方便。而随着我们大家的水平日渐提高，视觉提示正逐渐让位给一些真正有用的功能。</p><p><br/></p><p style="text-align: center; "><video poster="http://qjshow.qiniudn.com/gestures.png" autoplay="autoplay" width="240" height="426" loop="true"><source src="http://qjshow.qiniudn.com/gestures.mp4" type="video/mp4"/><source src="https://designcode.io/images/webm/gestures.webm" type="video/webm"/>您的浏览器不支持video标签，请用chrome、safari、firefox浏览器浏览</video></p><p><br/></p><p>　　<strong><span style="font-size: 24px;">音效</span></strong></p><p><br/></p><p>　　音效在应用中的使用很少，但其却能将一项平凡的任务转变成令人激动的体验。通过音效，大家不用眼睛就能知道你使用的是什么应用。如果能让音效达到耳熟能详的效果，你就能以最小的努力赢得很大的成功。</p><p><br/></p><p style="text-align: center; "><video poster="http://qjshow.qiniudn.com/sounds.png" autoplay="autoplay" width="760" height="480" loop="true"><source src="http://qjshow.qiniudn.com/sounds.mp4" type="video/mp4"/><source src="https://designcode.io/images/webm/sounds.webm" type="video/webm"/>您的浏览器不支持video标签，请用chrome、safari、firefox浏览器浏览</video></p><p><br/></p><p style="text-align: center;"><img src="http://qjshow.qiniudn.com/1419772247518.jpg" title="学习iOS设计----iOS8的颜色、文字和布局学" data_ue_src="http://qjshow.qiniudn.com/1419772247518.jpg" width="700" height="467" border="0" hspace="0" vspace="0" style="width: 700px; height: 467px;"/></p><p><br/></p><p>　　<strong><span style="font-size: 24px;">三条规则</span></strong></p><p><br/></p><p>　　下面这3条极为重要的iOS 设计规则是万万不可忽略的：思考触摸界面、提高文字可读性并针对iPhone 4进行优化。</p><p><br/></p><p>　　<strong><span style="font-size: 24px;">触摸设计</span></strong></p><p><br/></p><p>　　按钮应当方便好按。在视网膜屏幕上，按钮的大小应当为60-120px高。最佳高度为88px。在极少数情况下，可以为文字内部的链接设定44px，但使用时要慎重——用户可能很难按得到。即便是纯文字按钮也应该有至少60px的可点击区域。宽度应与高度相同。</p><p><br/></p><p style="text-align: center;"><img src="http://qjshow.qiniudn.com/1419772311139.jpg" title="学习iOS设计----iOS8的颜色、文字和布局学" data_ue_src="http://qjshow.qiniudn.com/1419772311139.jpg" width="732" height="245" border="0" hspace="0" vspace="0" style="width: 732px; height: 245px;"/></p><p><br/></p><p>　　<strong><span style="font-size: 24px;">可读性</span></strong></p><p><br/></p><p>　　在视网膜屏幕上，文字大小不能小于22px。最佳阅读字体大小为32px。使用120-140%的线高可提高阅读体验。</p><p><br/></p><p style="text-align: center;"><img src="http://qjshow.qiniudn.com/14197723441311.jpg" title="学习iOS设计----iOS8的颜色、文字和布局学" data_ue_src="http://qjshow.qiniudn.com/14197723441311.jpg" width="361" height="285" border="0" hspace="0" vspace="0" style="width: 361px; height: 285px;"/></p><p><br/></p><p style="text-align: center;"><img src="http://qjshow.qiniudn.com/14197723787195.jpg" title="学习iOS设计----iOS8的颜色、文字和布局学" data_ue_src="http://qjshow.qiniudn.com/14197723787195.jpg" width="700" height="467" border="0" hspace="0" vspace="0" style="width: 700px; height: 467px;"/></p><p><br/></p><p>　　<strong><span style="font-size: 24px;">入门模板</span></strong></p><p><br/></p><p>　　学习新技术的最佳方式就是对他人的作品进行反向工程。这些模板不仅可以帮助你学习，还可以拿来直接使用或者定制，这样一来你就不用每每从零开始，从而能够避免很多出错的可能性。模板能让你的设计更加得心应手，慢慢地你就会入迷。</p><p><br/></p><p>　　<strong><span style="font-size: 24px;">ios 8 Template for Sketch</span></strong></p><p><br/></p><p>　　iOS 8 Template for Sketch是一个绝佳的起点。其可为你提供iOS 8中现有的大多数UI元素，你可以在自己的设计中随心使用。在使用时，要逐渐习惯标题、按钮、对话框等元素的尺寸。</p><p><br/></p><p style="text-align: center;"><a href="https://github.com/rafaelconde/ios8-ui-kit" target="_blank" title=""><img src="http://qjshow.qiniudn.com/14197724159305.jpg" title="学习iOS设计----iOS8的颜色、文字和布局学" data_ue_src="http://qjshow.qiniudn.com/14197724159305.jpg" width="700" height="561" border="0" hspace="0" vspace="0" style="width: 700px; height: 561px;"/></a></p><p><br/></p><p>　　<strong><span style="font-size: 24px;">iOS 8 Illustrator Vector UI Kit</span></strong></p><p><br/></p><p>　　这是针对iOS 8的一套非常完整的UI包。这个模板虽然全面但是只适用于Illustrator。</p><p><br/></p><p style="text-align: center;"><a href="http://mercury.io/blog/ios-8-illustrator-vector-ui-kit-update" target="_blank" title=""><img src="http://qjshow.qiniudn.com/14197724608127.jpg" title="学习iOS设计----iOS8的颜色、文字和布局学" data_ue_src="http://qjshow.qiniudn.com/14197724608127.jpg" width="700" height="681" border="0" hspace="0" vspace="0" style="width: 700px; height: 681px;"/></a></p><p><br/></p><p>　　iOS 8及iPhone 6资源</p><p><br/></p><p>　　为iOS 8和iPhone 6及Plus进行设计相对还说还是个比较新颖的课题，所以说这一部分会不断更新。</p><p><br/></p><p style="text-align: center;"><a href="https://designcode.io/iphone6" target="_blank" title=""><img src="http://qjshow.qiniudn.com/14197725046046.jpg" title="学习iOS设计----iOS8的颜色、文字和布局学" data_ue_src="http://qjshow.qiniudn.com/14197725046046.jpg" width="700" height="455" border="0" hspace="0" vspace="0" style="width: 700px; height: 455px;"/></a></p><p><br/></p><p>　　翻译：蒋灿</p><p><br/></p><p>　　原文地址：<a >designcode.io</a></p><p><br/></p>
+
+<p></p>
+  
+<p>&nbsp;</p> <p>&nbsp;</p><p>&nbsp;</p>
+</div>
+</div>			
+<p>&nbsp;</p> <p>&nbsp;</p>
+<!--高速版-->
+<style>iframe{
+    display: none !important;
+}
+</style>
+<div id="SOHUCS"></div>
+<script charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/changyan.js" ></script>
+<script type="text/javascript">
+    window.changyan.api.config({
+        appid: 'cys7rKITe',
+        conf: 'prod_84b0b2623f72d880c39e10a7ac7ad6b5'
+    });
+</script>  
+
+</div></div></div></div>
+
+
+
+		<!--[if !IE]><!-->	
+        <div class="copyright">
+            <p style="padding-left: 3%;padding-top: 14px;">
+                <a href="#">版权所有</a>
+            </p>
+            <p style=" padding-left: 3%;">
+                Copyright © qijishow.com. All Rights Reserved.
+            </p>
+        </div>
+<!--<![endif]-->
+
+          <!--  <div id="js_pc_qr_code" class="qr_code_pc_outer" style="display: block;">
+                <div class="qr_code_pc_inner">
+                    <div class="qr_code_pc">
+                        <img id="js_pc_qr_code_img" class="qr_code_pc_img" src="./一个banner仔的自我修养（1）_files/qrcode">
+                        <p>微信扫一扫<br>获得更多内容</p>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+    </div>
+<div id="spig" class="spig">
+    <div id="message">加载中……</div>
+    <div id="mumu" class="mumu"></div>
+</div>
+
+<link rel="stylesheet" type="text/css" href="../css/xiumiao.css">
+<script type="text/javascript" src="../js/xiumiaoo.js"></script>
+<!--<script type="text/javascript">
+var isindex=true;var title="";var visitor="亲爱的秀咪"
+</script>-->
+<script type="text/javascript">
+var isindex=false;var title="秀喵驾到啦！";var visitor="亲爱的秀密们";
+</script>
+	
+	
+<script>
+//手机打开浮层
+$("#dd").click(function(){
+	//var s = $(".dropdown").css('overflow');
+	/*if ( s=='hidden' ){
+		$(".dropdown").css('overflow','visible');
+	}else{
+		$(".dropdown").css('overflow','hidden');
+	}*/
+	var s = $(this).hasClass('active');
+	if ( s ){
+		$(this).removeClass('active');
+	}else{
+		$(this).addClass('active');
+	}
+	var b = $(".search_top").css('display');
+
+	if ( b=='block'  ){$(".search_top").css('display','none');
+}
+})
+$(".so_icon").click(function(){
+	var s = $(".search_top").css('display');
+	if ( s=='none' ){
+		$(".search_top").css('display','block');
+	}else{
+		$(".search_top").css('display','none');
+	}
+	var b = $("#dd").hasClass('active');
+	if ( b  ){$("#dd").removeClass('active');
+	}
+})
+</script>
+</div></body></html>
