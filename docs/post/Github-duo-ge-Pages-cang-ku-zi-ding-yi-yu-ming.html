@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="zh-CN">
+<html data-color-mode="light" data-dark-theme="dark" data-light-theme="light" lang="en">
 <head>
     <meta content="text/html; charset=utf-8" http-equiv="content-type" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
@@ -11,13 +11,11 @@
     </script>
 <meta name="description" content="### 设置自定义域名
 
-#### 1. 登录到你的 Cloudflare 账号
-1. 选择你的域名（例如 `yourdomain.com`）。">
+#### 1.">
 <meta property="og:title" content="Github多个Pages仓库自定义域名">
 <meta property="og:description" content="### 设置自定义域名
 
-#### 1. 登录到你的 Cloudflare 账号
-1. 选择你的域名（例如 `yourdomain.com`）。">
+#### 1.">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://ischriswong.github.io/blog/post/Github-duo-ge-Pages-cang-ku-zi-ding-yi-yu-ming.html">
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/150762021?v=4">
@@ -54,7 +52,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     <div id="header">
 <h1 class="postTitle">Github多个Pages仓库自定义域名</h1>
 <div class="title-right">
-    <a href="https://ischriswong.github.io/blog" id="buttonHome" class="btn btn-invisible circle" title="首页">
+    <a href="https://ischriswong.github.io/blog" id="buttonHome" class="btn btn-invisible circle" title="home">
         <svg class="octicon" width="16" height="16">
             <path id="pathHome" fill-rule="evenodd"></path>
         </svg>
@@ -67,7 +65,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
     </a>
     
 
-    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="切换主题">
+    <a class="btn btn-invisible circle" onclick="modeSwitch();" title="switch theme">
         <svg class="octicon" width="16" height="16" >
             <path id="themeSwitch" fill-rule="evenodd"></path>
         </svg>
@@ -129,7 +127,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <p>完成这些步骤后，你的博客应该可以通过 <code class="notranslate">yourdomain.com</code> 访问了，直接展示博客内容而不是重定向。</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
-<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
+<button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">comments</button>
 <div class="comments" id="comments"></div>
 
 </div>
@@ -145,8 +143,8 @@ if("07/04/2024"!=""){
     var diff=now.getTime()-startSite.getTime();
     var diffDay=Math.floor(diff/(1000*60*60*24));
     document.getElementById("year").innerHTML=now.getFullYear();
-    if(""!=""){document.getElementById("runday").innerHTML=" • "+"网站运行"+diffDay+"天"+" • ";}
-    else{document.getElementById("runday").innerHTML="网站运行"+diffDay+"天"+" • ";}
+    if(""!=""){document.getElementById("runday").innerHTML=" • "+"run "+diffDay+" days"+" • ";}
+    else{document.getElementById("runday").innerHTML="run "+diffDay+" days"+" • ";}
 }
 </script>
 </div>
