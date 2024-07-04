@@ -2,5 +2,7 @@
     "title":"王颖的博客",
     "subTitle":"时间胶囊",
     "avatarUrl":"https://avatars.githubusercontent.com/u/150762021?v=4",
-    "GMEEK_VERSION":"last"
+    "GMEEK_VERSION":"last",
+    "iconList": {"music": "M12 3v10.55A4 4 0 1 0 14 17V7h4V3h-6z" },
+    "exlink":{"music":"https://music.meekdai.com"}
 }
