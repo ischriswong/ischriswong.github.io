@@ -1,7 +1,11 @@
 我们一般建立第一个GitHub Pages仓库的时候，仓库名如果跟自己的用户名一样，GitHub会给你分配一个相同的域名。例如你的用户名是`example`，你的仓库名也是`example`
+
+
 `Gmeek-html<img src="https://imagehub.us.kg/file/afa29b410968a9b8ce85e.png">`
 
 那GitHub会给你分配一个`example.github.io`的域名
+
+
 `Gmeek-html<img src="https://imagehub.us.kg/file/1e1cd9e4b308984689ba2.png">`
 
 这时候你要自定义域名的话，直接去Cloudflare上正常解析就行了。
