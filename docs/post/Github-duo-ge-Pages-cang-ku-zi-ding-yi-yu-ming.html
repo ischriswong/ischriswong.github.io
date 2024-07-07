@@ -9,15 +9,13 @@
         let theme = localStorage.getItem("meek_theme") || "light";
         document.documentElement.setAttribute("data-color-mode", theme);
     </script>
-<meta name="description" content="### 设置自定义域名
+<meta name="description" content="# GitHub多个Pages仓库怎么自定义域名
 
-#### 1. 登录到你的 Cloudflare 账号
-1. 选择你的域名（例如 `yourdomain.com`）。">
+我们一般建立第一个GitHub Pages仓库的时候，仓库名如果跟自己的用户名一样，GitHub会给你分配一个相同的域名。">
 <meta property="og:title" content="Github多个Pages仓库自定义域名">
-<meta property="og:description" content="### 设置自定义域名
+<meta property="og:description" content="# GitHub多个Pages仓库怎么自定义域名
 
-#### 1. 登录到你的 Cloudflare 账号
-1. 选择你的域名（例如 `yourdomain.com`）。">
+我们一般建立第一个GitHub Pages仓库的时候，仓库名如果跟自己的用户名一样，GitHub会给你分配一个相同的域名。">
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://weblog.us.kg/post/Github-duo-ge-Pages-cang-ku-zi-ding-yi-yu-ming.html">
 <meta property="og:image" content="https://avatars.githubusercontent.com/u/150762021?v=4">
@@ -76,57 +74,28 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
 </div>
     <div id="content">
-<div class="markdown-body" id="postBody"><h3>设置自定义域名</h3>
-<h4>1. 登录到你的 Cloudflare 账号</h4>
+<div class="markdown-body" id="postBody"><h1>GitHub多个Pages仓库怎么自定义域名</h1>
+<p>我们一般建立第一个GitHub Pages仓库的时候，仓库名如果跟自己的用户名一样，GitHub会给你分配一个相同的域名。例如你的用户名是<code class="notranslate">example</code>，你的仓库名也是<code class="notranslate">example</code>，那GitHub会给你分配一个<code class="notranslate">example.github.io</code>的域名。这时候你要自定义域名的话，直接去Cloudflare上正常解析就行了。</p>
+<p>但是后续你再创建仓库的话，比如创建一个名为<code class="notranslate">music</code>的仓库，它给你分配的域名就成了<code class="notranslate">example.github.io/music</code>。那么这样的域名怎么自定义呢？</p>
+<h2>1. 设置自定义域名到 GitHub Pages</h2>
 <ol>
-<li>选择你的域名（例如 <code class="notranslate">yourdomain.com</code>）。</li>
-<li>进入 DNS 设置，添加一条新的 CNAME 记录：
-<ul>
-<li>名称 (Name): <code class="notranslate">@</code></li>
-<li>目标 (Target): <code class="notranslate">example.com</code></li>
-<li>TTL: 自动</li>
-<li>Proxy status: 可选（可以选择通过 Cloudflare 代理或仅 DNS）。</li>
-</ul>
-</li>
+<li>进入你的 GitHub Pages 项目仓库（<code class="notranslate">example.github.io/music</code>）。</li>
+<li>点击 <strong>Settings</strong>，再点击 <strong>Pages</strong>，然后在 <strong>Custom domain</strong> 输入你想要使用的自定义域名，例如 <code class="notranslate">yourdomain.com</code>，点击 <strong>Save</strong>。这时候在仓库的根目录会自动创建一个名为 <code class="notranslate">CNAME</code> 的文件。</li>
 </ol>
-<h3>设置页面规则</h3>
-<h4>2. 在 Cloudflare 仪表板中</h4>
+<h2>2. 设置 Cloudflare</h2>
 <ol>
-<li>选择“页面规则”（Page Rules）。</li>
-<li>添加一个新的页面规则，设置以下参数：
-<ul>
-<li>URL 匹配: <code class="notranslate">yourdomain.com/*</code></li>
-<li>添加一个转发 URL（Forwarding URL）规则：
-<ul>
-<li>选择“301 重定向”（永久重定向）。</li>
-<li>设置目标 URL 为 <code class="notranslate">https://example.com/example/$1</code>。</li>
-<li>点击“保存并部署”页面规则。</li>
-</ul>
-</li>
-</ul>
-</li>
-</ol>
-<p>完成这些步骤后，当你访问 <code class="notranslate">yourdomain.com</code> 时，Cloudflare 将自动重定向到 <code class="notranslate">https://example.com/example</code>。</p>
-<h3>如果你希望自定义域名直接展示博客内容而不是重定向，可以参考以下方法：</h3>
-<h4>1. 设置自定义域名到 GitHub Pages</h4>
-<ol>
-<li>进入你的 GitHub Pages 项目仓库（<code class="notranslate">example.com/example</code>）。</li>
-<li>在仓库的根目录创建一个名为 <code class="notranslate">CNAME</code> 的文件，并在文件中写入你想要使用的自定义域名，例如 <code class="notranslate">yourdomain.com</code>。</li>
-</ol>
-<h3>设置 Cloudflare</h3>
-<h4>2. 登录到你的 Cloudflare 账号</h4>
-<ol>
+<li>登录到你的 Cloudflare 账号。</li>
 <li>在 Cloudflare 仪表板中选择你的网站（例如 <code class="notranslate">yourdomain.com</code>）。</li>
-<li>进入 DNS 设置，添加一条新的 CNAME 记录：
+<li>进入 <strong>DNS 设置</strong>，添加一条新的 CNAME 记录：
 <ul>
-<li>名称 (Name): <code class="notranslate">@</code></li>
-<li>目标 (Target): <code class="notranslate">example.com</code></li>
+<li>名称 (Name): @</li>
+<li>目标 (Target): <code class="notranslate">example.github.io</code></li>
 <li>TTL: 自动（或你想要的时间）</li>
 <li>Proxy status: 可选（可以选择通过 Cloudflare 代理或仅 DNS）</li>
 </ul>
 </li>
 </ol>
-<p>完成这些步骤后，你的博客应该可以通过 <code class="notranslate">yourdomain.com</code> 访问了，直接展示博客内容而不是重定向。</p></div>
+<p>完成这些步骤后，你的博客应该可以通过 <code class="notranslate">yourdomain.com</code> 访问了。</p></div>
 <div style="font-size:small;margin-top:8px;float:right;"></div>
 
 <button class="btn btn-block" type="button" onclick="openComments()" id="cmButton">评论</button>
