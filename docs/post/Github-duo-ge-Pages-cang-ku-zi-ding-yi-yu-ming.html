@@ -71,16 +71,16 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 </div>
     <div id="content">
 <div class="markdown-body" id="postBody"><p>我们一般建立第一个GitHub Pages仓库的时候，仓库名如果跟自己的用户名一样，GitHub会给你分配一个相同的域名。例如你的用户名是<code class="notranslate">example</code>，你的仓库名也是<code class="notranslate">example</code><br>
-<img src=" ![](https://imagehub.us.kg/file/afa29b410968a9b8ce85e.png) "></p>
+<img src="https://imagehub.us.kg/file/afa29b410968a9b8ce85e.png"></p>
 <p>那GitHub会给你分配一个<code class="notranslate">example.github.io</code>的域名<br>
-<img src="[[https://github.com/ischriswong/photo/blob/fa179cad3bc3f9cb88d686b8e2a4f7bf64b3f41b/Github多个Pages仓库自定义域名/2.png?raw=true](https://imagehub.us.kg/file/b8af558ee1e8f13bfb017.png)](https://imagehub.us.kg/file/1e1cd9e4b308984689ba2.png)"></p>
+<img src="https://imagehub.us.kg/file/1e1cd9e4b308984689ba2.png"></p>
 <p>这时候你要自定义域名的话，直接去Cloudflare上正常解析就行了。</p>
 <p>但是后续你再创建仓库的话，比如创建一个名为<code class="notranslate">music</code>的仓库，它给你分配的域名就成了<code class="notranslate">example.github.io/music</code>。那么这样的域名怎么自定义呢？</p>
 <h2>1. 设置自定义域名到 GitHub Pages</h2>
 <ol>
 <li>进入你的 GitHub Pages 项目仓库（<code class="notranslate">example.github.io/music</code>）。</li>
 <li>点击 <strong>Settings</strong>，再点击 <strong>Pages</strong>，然后在 <strong>Custom domain</strong> 输入你想要使用的自定义域名，例如 <code class="notranslate">yourdomain.com</code>，点击 <strong>Save</strong>。这时候在仓库的根目录会自动创建一个名为 <code class="notranslate">CNAME</code> 的文件。<br>
-<img src="[[https://github.com/ischriswong/photo/blob/main/Github多个Pages仓库自定义域名/3.png?raw=true](https://imagehub.us.kg/file/54b3ca360a44ae459a22f.png)](https://imagehub.us.kg/file/b37201f967062accc7338.png)"></li>
+<img src="https://imagehub.us.kg/file/b37201f967062accc7338.png"></li>
 </ol>
 <h2>2. 设置 Cloudflare</h2>
 <ol>
@@ -92,7 +92,7 @@ body{box-sizing: border-box;min-width: 200px;max-width: 900px;margin: 20px auto;
 <li>目标 (Target): <code class="notranslate">example.github.io</code></li>
 <li>TTL: 自动（或你想要的时间）</li>
 <li>Proxy status: 可选（可以选择通过 Cloudflare 代理或仅 DNS）<br>
-<img src="[[https://github.com/ischriswong/photo/blob/main/Github多个Pages仓库自定义域名/4.png?raw=true](https://imagehub.us.kg/file/762f4c4ea7d55289ea9a3.png)](https://imagehub.us.kg/file/762f4c4ea7d55289ea9a3.png)"></li>
+<img src="https://imagehub.us.kg/file/762f4c4ea7d55289ea9a3.png"></li>
 </ul>
 </li>
 </ol>

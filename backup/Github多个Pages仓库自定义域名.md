@@ -1,10 +1,8 @@
 我们一般建立第一个GitHub Pages仓库的时候，仓库名如果跟自己的用户名一样，GitHub会给你分配一个相同的域名。例如你的用户名是`example`，你的仓库名也是`example`
-`Gmeek-html<img src="
-![](https://imagehub.us.kg/file/afa29b410968a9b8ce85e.png)
-">`
+`Gmeek-html<img src="https://imagehub.us.kg/file/afa29b410968a9b8ce85e.png">`
 
 那GitHub会给你分配一个`example.github.io`的域名
-`Gmeek-html<img src="[[https://github.com/ischriswong/photo/blob/fa179cad3bc3f9cb88d686b8e2a4f7bf64b3f41b/Github多个Pages仓库自定义域名/2.png?raw=true](https://imagehub.us.kg/file/b8af558ee1e8f13bfb017.png)](https://imagehub.us.kg/file/1e1cd9e4b308984689ba2.png)">`
+`Gmeek-html<img src="https://imagehub.us.kg/file/1e1cd9e4b308984689ba2.png">`
 
 这时候你要自定义域名的话，直接去Cloudflare上正常解析就行了。
 
@@ -14,7 +12,7 @@
 
 1. 进入你的 GitHub Pages 项目仓库（`example.github.io/music`）。
 2. 点击 **Settings**，再点击 **Pages**，然后在 **Custom domain** 输入你想要使用的自定义域名，例如 `yourdomain.com`，点击 **Save**。这时候在仓库的根目录会自动创建一个名为 `CNAME` 的文件。
-`Gmeek-html<img src="[[https://github.com/ischriswong/photo/blob/main/Github多个Pages仓库自定义域名/3.png?raw=true](https://imagehub.us.kg/file/54b3ca360a44ae459a22f.png)](https://imagehub.us.kg/file/b37201f967062accc7338.png)">`
+`Gmeek-html<img src="https://imagehub.us.kg/file/b37201f967062accc7338.png">`
 
 ## 2. 设置 Cloudflare
 
@@ -25,6 +23,6 @@
    - 目标 (Target): `example.github.io`
    - TTL: 自动（或你想要的时间）
    - Proxy status: 可选（可以选择通过 Cloudflare 代理或仅 DNS）
-`Gmeek-html<img src="[[https://github.com/ischriswong/photo/blob/main/Github多个Pages仓库自定义域名/4.png?raw=true](https://imagehub.us.kg/file/762f4c4ea7d55289ea9a3.png)](https://imagehub.us.kg/file/762f4c4ea7d55289ea9a3.png)">`
+`Gmeek-html<img src="https://imagehub.us.kg/file/762f4c4ea7d55289ea9a3.png">`
 
 完成这些步骤后，你的博客应该可以通过 `yourdomain.com` 访问了。
