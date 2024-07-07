@@ -1,9 +1,9 @@
-# GitHub多个Pages仓库怎么自定义域名
-
-我们一般建立第一个GitHub Pages仓库的时候，仓库名如果跟自己的用户名一样，GitHub会给你分配一个相同的域名。例如你的用户名是`example`，你的仓库名也是`example`，
+我们一般建立第一个GitHub Pages仓库的时候，仓库名如果跟自己的用户名一样，GitHub会给你分配一个相同的域名。例如你的用户名是`example`，你的仓库名也是`example`
 `Gmeek-html<img src="https://github.com/ischriswong/photo/blob/main/Github多个Pages仓库自定义域名/1.png?raw=true">`
-那GitHub会给你分配一个`example.github.io`的域名。
+
+那GitHub会给你分配一个`example.github.io`的域名
 `Gmeek-html<img src="https://github.com/ischriswong/photo/blob/fa179cad3bc3f9cb88d686b8e2a4f7bf64b3f41b/Github多个Pages仓库自定义域名/2.png?raw=true">`
+
 这时候你要自定义域名的话，直接去Cloudflare上正常解析就行了。
 
 但是后续你再创建仓库的话，比如创建一个名为`music`的仓库，它给你分配的域名就成了`example.github.io/music`。那么这样的域名怎么自定义呢？
