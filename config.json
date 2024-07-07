@@ -8,5 +8,7 @@
     "exlink":{"music":"https://mymusic.us.kg"},
     "onePageListNum":15,
     "homeUrl":"https://weblog.us.kg",
+    "showPostSource":1,
+    "commentLabelColor":"#006b75",
     "needComment":1
 }
