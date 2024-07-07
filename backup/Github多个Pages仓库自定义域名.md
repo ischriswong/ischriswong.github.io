@@ -12,6 +12,7 @@
 
 1. 进入你的 GitHub Pages 项目仓库（`example.github.io/music`）。
 2. 点击 **Settings**，再点击 **Pages**，然后在 **Custom domain** 输入你想要使用的自定义域名，例如 `yourdomain.com`，点击 **Save**。这时候在仓库的根目录会自动创建一个名为 `CNAME` 的文件。
+
 `Gmeek-html<img src="https://imagehub.us.kg/file/b37201f967062accc7338.png">`
 
 ## 2. 设置 Cloudflare
@@ -23,6 +24,7 @@
    - 目标 (Target): `example.github.io`
    - TTL: 自动（或你想要的时间）
    - Proxy status: 可选（可以选择通过 Cloudflare 代理或仅 DNS）
+
 `Gmeek-html<img src="https://imagehub.us.kg/file/762f4c4ea7d55289ea9a3.png">`
 
 完成这些步骤后，你的博客应该可以通过 `yourdomain.com` 访问了。
